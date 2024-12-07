@@ -1,0 +1,212 @@
+/* Global Styles */
+
+body {
+
+    background-color: #1f1135; /* Dark purple */
+
+    color: #b8ffb1; /* Neon green */
+
+    font-family: 'Arial', sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow-x: hidden; /* Prevent horizontal scroll from animations */
+
+}
+
+
+
+/* Header */
+
+header {
+
+    background-color: #2a1348;
+
+    text-align: center;
+
+    padding: 20px;
+
+    border-bottom: 3px solid #b8ffb1;
+
+}
+
+
+
+header h1 {
+
+    font-size: 2.5em;
+
+    font-weight: bold;
+
+}
+
+
+
+nav a {
+
+    color: #b8ffb1;
+
+    margin: 0 15px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    position: relative;
+
+}
+
+
+
+nav a::before {
+
+    content: '';
+
+    position: absolute;
+
+    bottom: -5px;
+
+    left: 0;
+
+    width: 0%;
+
+    height: 2px;
+
+    background-color: #b8ffb1;
+
+    transition: width 0.3s ease;
+
+}
+
+
+
+nav a:hover::before {
+
+    width: 100%;
+
+}
+
+
+
+/* Hero */
+
+.hero {
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background: url('villain-bg.jpg') no-repeat center/cover;
+
+    color: #b8ffb1;
+
+    box-shadow: 0 0 30px #b8ffb1;
+
+}
+
+
+
+.hero h2 {
+
+    font-size: 2.5em;
+
+}
+
+
+
+/* Product Cards */
+
+.products {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 20px;
+
+    padding: 40px;
+
+}
+
+
+
+.product {
+
+    background-color: #2a1348;
+
+    padding: 15px;
+
+    border: 2px solid #b8ffb1;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    position: relative;
+
+}
+
+
+
+.buy-button {
+
+    margin-top: 10px;
+
+    padding: 10px 15px;
+
+    background-color: #b8ffb1;
+
+    color: #1f1135;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    position: relative;
+
+}
+
+
+
+.buy-button:active {
+
+    animation: toxic-smoke 1s forwards;
+
+}
+
+
+
+/* Toxic Smoke Animation */
+
+@keyframes toxic-smoke {
+
+    0% {
+
+        box-shadow: 0 0 10px #b8ffb1;
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        box-shadow: 0 0 30px #ff6b6b;
+
+        transform: scale(1.1);
+
+    }
+
+    100% {
+
+        box-shadow: 0 0 0px transparent;
+
+        transform: scale(1);
+
+    }
+
+}
+

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Card Shop</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            background-color: #1f1135; /* Dark purple background */
+
+            color: #b8ffb1; /* Neon green text */
+
+        }
+
+        header {
+
+            background-color: #2a1348; /* Darker purple for header */
+
+            padding: 20px;
+
+            text-align: center;
+
+        }
+
+        nav a {
+
+            color: #b8ffb1;
+
+            margin: 0 15px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+        }
+
+        nav a:hover {
+
+            color: #ffffff; /* White hover effect */
+
+        }
+
+        .hero {
+
+            text-align: center;
+
+            padding: 50px;
+
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+
+            color: #b8ffb1;
+
+        }
+
+        .products, .services {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+            gap: 20px;
+
+            padding: 20px;
+
+        }
+
+        .section-title {
+
+            text-align: center;
+
+            margin-top: 20px;
+
+            font-size: 2em;
+
+        }
+
+        .product, .service {
+
+            background-color: #2a1348;
+
+            border: 2px solid #b8ffb1;
+
+            border-radius: 10px;
+
+            padding: 15px;
+
+            text-align: center;
+
+        }
+
+        .product img, .service img {
+
+            max-width: 100%;
+
+            border-radius: 10px;
+
+        }
+
+        .subscription-form {
+
+            text-align: center;
+
+            margin: 40px 0;
+
+        }
+
+        .subscription-form input[type="email"] {
+
+            padding: 10px;
+
+            width: 300px;
+
+            border: 2px solid #b8ffb1;
+
+            border-radius: 5px;
+
+        }
+
+        .subscription-form button {
+
+            padding: 10px 20px;
+
+            background-color: #b8ffb1;
+
+            border: none;
+
+            color: #1f1135;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+        }
+
+        footer {
+
+            background-color: #2a1348;
+
+            text-align: center;
+
+            padding: 10px;
+
+            margin-top: 20px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Your Card Shop</h1>
+
+        <nav>
+
+            <a href="#shop">Shop</a>
+
+            <a href="#sell-trade">Sell/Trade</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <section class="hero">
+
+        <h2>Buy, Sell, Trade Your Favorite TCG Cards</h2>
+
+        <p>Discover rare finds, exciting deals, and top-notch services today!</p>
+
+    </section>
+
+
+
+    <section class="products" id="shop">
+
+        <h2 class="section-title">Shop</h2>
+
+        <div class="product">
+
+            <img src="yugioh-card.jpg" alt="Yu-Gi-Oh Card">
+
+            <h3>Yu-Gi-Oh!</h3>
+
+            <p>From $5.00</p>
+
+        </div>
+
+        <div class="product">
+
+            <img src="pokemon-card.jpg" alt="Pokemon Card">
+
+            <h3>Pokémon</h3>
+
+            <p>From $8.00</p>
+
+        </div>
+
+        <div class="product">
+
+            <img src="magic-card.jpg" alt="Magic Card">
+
+            <h3>Magic: The Gathering</h3>
+
+            <p>From $10.00</p>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="subscription-form">
+
+        <h2>Get the Latest Deals and Discounts</h2>
+
+        <p>Sign up to receive exclusive offers straight to your inbox!</p>
+
+        <form action="subscribe.php" method="post">
+
+            <input type="email" name="email" placeholder="Enter your email" required>
+
+            <button type="submit">Subscribe</button>
+
+        </form>
+
+    </section>
+
+
+
+    <section class="services" id="services">
+
+        <h2 class="section-title">Services</h2>
+
+        <div class="service">
+
+            <img src="computer-repair.jpg" alt="Computer Repair">
+
+            <h3>Computer Repair</h3>
+
+            <p>Professional diagnostics and repairs for all systems.</p>
+
+        </div>
+
+        <div class="service">
+
+            <img src="hard-drive-recovery.jpg" alt="Hard Drive Recovery">
+
+            <h3>Hard Drive Recovery</h3>
+
+            <p>Recover your lost or damaged data with ease.</p>
+
+        </div>
+
+        <div class="service">
+
+            <img src="os-upgrades.jpg" alt="OS Upgrade">
+
+            <h3>OS Upgrades</h3>
+
+            <p>Upgrade your operating system for better performance.</p>
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        <p>© 2024 Your Card Shop</p>
+
+    </footer>
+
+</body>
+
+</html>
+
